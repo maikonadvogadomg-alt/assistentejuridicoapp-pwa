@@ -1,0 +1,23 @@
+{
+  "name": "assistente-juridico-app",
+  "version": "1.0.0",
+  "description": "Assistente Jurídico IA — App Android",
+  "main": "index.js",
+  "scripts": {
+    "cap:add-android": "npx @capacitor/cli add android",
+    "cap:sync": "npx @capacitor/cli sync",
+    "cap:open": "npx @capacitor/cli open android",
+    "cap:build": "npx @capacitor/cli build android",
+    "setup": "npm install && npx @capacitor/cli add android && npx @capacitor/cli sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  },
+  "keywords": ["capacitor", "android", "juridico"],
+  "license": "MIT"
+}

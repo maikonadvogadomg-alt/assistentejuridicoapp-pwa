@@ -1,0 +1,56 @@
+======================================================
+  ASSISTENTE JURÍDICO IA — PACOTE CAPACITOR ANDROID
+======================================================
+
+REQUISITOS:
+  - Node.js 18 ou superior
+  - Java JDK 17 ou superior
+  - Android Studio instalado (com SDK Android)
+  - npm ou npx disponível no terminal
+
+------------------------------------------------------
+COMO CONVERTER EM APK:
+------------------------------------------------------
+
+PASSO 1 — Instalar dependências:
+  npm install
+
+PASSO 2 — Adicionar plataforma Android:
+  npx cap add android
+
+PASSO 3 — Sincronizar arquivos web com Android:
+  npx cap sync
+
+PASSO 4 — Abrir no Android Studio para gerar APK:
+  npx cap open android
+
+  No Android Studio:
+  → Build → Build Bundle(s) / APK(s) → Build APK(s)
+  O APK estará em: android/app/build/outputs/apk/debug/
+
+OU TUDO DE UMA VEZ (se o seu programa suportar):
+  npm run setup
+
+------------------------------------------------------
+ESTRUTURA DO PACOTE:
+------------------------------------------------------
+  www/                → Arquivos da aplicação web (já buildados)
+  capacitor.config.json → Configuração do Capacitor
+  package.json        → Dependências e scripts
+
+------------------------------------------------------
+INFORMAÇÕES DO APP:
+------------------------------------------------------
+  App ID: com.assistentejuridico.app
+  Nome:   Assistente Jurídico IA
+  Versão: 1.0.0
+  webDir: www
+
+------------------------------------------------------
+OBSERVAÇÃO:
+------------------------------------------------------
+  O app armazena as chaves de API (Gemini, OpenAI, etc.)
+  localmente no dispositivo (localStorage/AsyncStorage).
+  Não há servidor — toda a IA é chamada direto pelo app.
+
+======================================================
